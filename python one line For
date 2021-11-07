@@ -1,0 +1,24 @@
+sentence='what is the diffrence between sentence and a word it is space the words does not contain any space'
+#Now lets find how many space in the sentence
+
+#1.Here now we going the result of how many char and count of the chars  
+how_many_char={i: sentence.count(i) for i in sentence }
+print(how_many_char)
+
+#2. How to see how many white space in the sentence
+# that's the syntax of one line for with if 
+how_many_space={i:sentence.count(i) for i in sentence if i ==' '}
+print(how_many_space)
+
+#3. One line For with if else 
+"""
+here the explanation of the code: from left to right when we read the code first x is coming from |for loop| and then if else clause then for loop 
+
+"""
+
+a=[x if x % 2 else x * 100 for x in range(1, 10) ]
+print(a)
+
+# if you whan to use elif the syntax is like this you can use if again and again like that 
+a=[x if x % 3  else x * 100 if x % 2  else x * 200 for x in range(1, 100) ]
+print (a)
