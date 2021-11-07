@@ -1,0 +1,5 @@
+#python tek satır asal mı kontrolü 
+def asal_mi(s):
+    a = len([ i for i in range(2, s) if s%i == 0 ])<1
+    return a
+asal_mi(9)
